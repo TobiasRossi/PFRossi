@@ -783,7 +783,7 @@ header {
 
 .contacto-chico {
     font-size: 18px;
-    width: 400px;
+    width: 90%;
     padding: 3px 10px;
     text-align: center;
     border-style: solid;
@@ -793,7 +793,7 @@ header {
 .contacto-texto {
     font-family: 'Albert Sans', sans-serif;
     font-size: 18px;
-    width: 415px;
+    width: 90%;
     height: 405px;
     padding: 10px;
     border-style: solid;
@@ -819,6 +819,18 @@ header {
     padding-top: 20px;
     padding-bottom: 40px;
     padding-left: 25px;
+}
+
+@media(min-width:768px) {
+    .contacto-chico {
+        width: 400px;
+    }
+}
+
+@media(min-width:1024px) {
+    .contacto-chico {
+        width: 70%;
+    }
 }
 /* TERMINA CSS DE CONTACTO */
 
