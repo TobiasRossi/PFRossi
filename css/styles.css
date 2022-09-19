@@ -1,10 +1,12 @@
 body {
     font-family: 'Albert Sans', sans-serif;
-    background-color: #EAEBED;
-    background-image: url(https://img.freepik.com/vector-gratis/fondo-estampado-viajes_23-2148043441.jpg?w=2000);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+main {
+    background-color: #fafafa
 }
 
 
@@ -15,6 +17,24 @@ body {
 
 :root {
     --bs-body-font-family: 'Inter', sans-serif;
+}
+
+.logo:hover {
+    animation-name: mover-logo;
+    animation-duration: 2.5s;
+}
+
+@keyframes mover-logo {
+    0% {
+        transform: translate(0px);
+    }
+    50% {
+        transform: translate(180px) rotateY(180deg);
+        
+    }
+    100% {
+        transform: translate(0px);
+    }
 }
 
 /* HEADER HECHO CON BOOSTRAP */
