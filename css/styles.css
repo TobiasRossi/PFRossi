@@ -13,12 +13,6 @@ main {
 
 /* HEADER HECHO CON BOOSTRAP */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&display=swap');
-
-:root {
-    --bs-body-font-family: 'Inter', sans-serif;
-}
-
 .logo:hover {
     animation-name: mover-logo;
     animation-duration: 2.5s;
@@ -39,7 +33,10 @@ main {
 
 /* HEADER HECHO CON BOOSTRAP */
 
-
+.logo {
+    width: 50px;
+    height: 50px;
+}
 
 /* COMIENZA CSS DE INDEX */
 
@@ -92,22 +89,6 @@ main {
     color: #000000;
 }
 
-@media (min-width:768px) {
-    .paises {
-        width: auto;
-        border-width: medium;
-        border-style: hidden;
-        border-radius: 20px;
-        box-shadow: 7px 7px 30px #363636;
-        margin: 25px;
-        background-color: #fafafa;
-    }
-}
-
-@media (min-width:1024px) {
-
-}
-
 /* TERMINA CSS DE INDEX */
 
 
@@ -115,8 +96,7 @@ main {
 /* COMIENZA CSS DE DESTINOS */
 
 .destinos-main {
-    margin-left: 10%;
-    margin-right: 10%;
+    margin: 0 0;
     background-color: #EAEBED;
 }
 
@@ -132,6 +112,8 @@ main {
 }
 
 .ciudades {
+    padding: 0 2%;
+    margin: 0 5%;
     display: grid;
     grid-auto-flow: column;
     overflow-x: auto;
@@ -176,24 +158,6 @@ main {
     margin: 5px;
 }
 
-@media (min-width:768px) {
-
-    .tarjeta-text {
-        margin: 1rem;
-    }
-}
-
-@media (min-width:1024px) {
-    .tarjeta {
-        margin: 20px;
-        text-align: center;
-        background-color: #fafafa;
-        border-radius: 40px;
-        width: 23vw;
-        box-shadow: 2px 2px 20px #363636;
-    }
-}
-
 /* TERMINA CSS DE DESTINOS */
 
 
@@ -229,32 +193,6 @@ main {
     padding: 10px;
 }
 
-@media (min-width:768px){
-
-}
-
-@media (min-width:1024px){
-    
-    .locales-div {
-        display: flex;
-        flex-direction: row;
-        margin: 25px;
-        border-radius: 30px;
-        background-color: #dfdfdf;
-        box-shadow: 5px 5px 10px #363636;
-    }
-
-    .locales-mapa {
-        width: 80%;
-        max-width: 450px;
-        padding: 20px;
-        border-radius: 30px;
-    }
-
-    .locales-text {
-        text-align: start;
-    }
-}
 /* TERMINA CSS DE LOCALES */
 
 
@@ -392,7 +330,176 @@ main {
     align-self: center;
 }
 
-@media (min-width:768px){
+
+/* TERMINA CSS DE NOSOTROS */
+
+
+
+/* COMIENZA CSS DE CONTACTO */
+
+.contacto-main {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.contacto-section {
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #EAEBED;
+}
+
+.contacto-hdos {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding-top: 40px;
+}
+
+.contacto-puno {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.label {
+    font-weight: bold;
+    padding: 10px;
+}
+
+.div-correo, .div-nombre, .div-asunto, .div-texto, .div-boton {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.contacto-chico {
+    font-size: 18px;
+    width: 90%;
+    padding: 3px 10px;
+    text-align: center;
+    border-style: solid;
+    border-radius: 20px;
+}
+
+.contacto-texto {
+    font-family: 'Albert Sans', sans-serif;
+    font-size: 18px;
+    width: 90%;
+    height: 405px;
+    padding: 10px;
+    border-style: solid;
+    border-radius: 20px;
+}
+
+.contacto-boton {
+    color: black;
+    background-color: #fc5050;
+    font-size: 18px;
+    padding: 3px 80px;
+    border-style: solid;
+    border-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 3px 3px 10px;
+    transition: 0.2s;
+    transition-timing-function: ease-out;
+}
+
+.contacto-boton:hover {
+    transform: scale(1.2);
+}
+
+.contacto-pdos {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    padding-left: 25px;
+}
+
+/* TERMINA CSS DE CONTACTO */
+
+
+
+/* COMIENZA CSS DE FOOTER */
+
+.pie {
+    background-color: #c52e2e;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 90px;
+}
+
+.pie__h3 {
+    font-size: 130%;
+    color: #fafafa;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.redes {
+    margin-bottom: 15px;
+    text-align: center;
+    width: 30%;
+}
+
+.pagos {
+    text-align: center;
+    width: 30%;
+}
+
+.atencion {
+    margin-top: 15px;
+    text-align: center;
+    width: 30%;
+}
+
+.wpp {
+    display: flex;
+    justify-content: center;
+}
+
+.hs {
+    align-self: center;
+}
+
+.logospie {
+    filter: invert(100);
+    margin: 5px;
+    width: 35px;
+    transition: 0.2s;
+}
+.logospie:hover {
+    transform: scale(1.3);
+}
+
+/* TERMINA CSS DE FOOTER */
+
+@media (min-width:768px) {
+
+    /* INDEX 768PX */
+
+    .paises {
+        width: auto;
+        border-width: medium;
+        border-style: hidden;
+        border-radius: 20px;
+        box-shadow: 7px 7px 30px #363636;
+        margin: 25px;
+        background-color: #fafafa;
+    }
+    .tarjeta-text {
+        margin: 1rem;
+    }
+
+    /* NOSOTROS 768PX */
+
     .nosotros-section {
         margin-left: 10%;
         margin-right: 10%;
@@ -526,15 +633,74 @@ main {
         font-size: small;
         align-self: center;
     }
+
+    /* CONTACTO 768PX */
+
+    .contacto-chico {
+        width: 400px;
+    }
+
+    /* FOOTER 768PX */ 
+
+    .pie {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        min-height: 90px;
+    }
+
+    .redes {
+        padding-left: 10px;
+        text-align: center;
+        width: 30%;
+    }
+
+    .atencion {
+        padding-right: 10px;
+        text-align: center;
+        width: 30%;
+    }
 }
 
-@media (min-width:1024px){
-    .nosotros-section {
-        margin-left: 10%;
-        margin-right: 10%;
-        padding: 10px;
-        background-color: #EAEBED;
+
+
+@media (min-width:1024px) {
+
+    /* INDEX 1024PX */
+
+    .tarjeta {
+        margin: 20px;
+        text-align: center;
+        background-color: #fafafa;
+        border-radius: 40px;
+        width: 23vw;
+        box-shadow: 2px 2px 20px #363636;
     }
+
+    /* LOCALES 1024PX */
+
+    .locales-div {
+        display: flex;
+        flex-direction: row;
+        margin: 25px;
+        border-radius: 30px;
+        background-color: #dfdfdf;
+        box-shadow: 5px 5px 10px #363636;
+    }
+
+    .locales-mapa {
+        width: 80%;
+        max-width: 450px;
+        padding: 20px;
+        border-radius: 30px;
+    }
+
+    .locales-text {
+        text-align: start;
+    }
+
+    /* NOSOTROS 1024PX */
     
     .nosotros-datos {
         display: grid;
@@ -542,10 +708,6 @@ main {
         grid-template-rows: repeat(7, 1fr);
     }
     
-    .nosotros-titulo {
-        margin: 0;
-        padding: 10px;
-    }
     
     .nosotros-historia{
         padding: 10px;
@@ -615,11 +777,6 @@ main {
         justify-self: center;
     }
     
-    .nosotros-ellos {
-        display: flex;
-        justify-content: center;
-    }
-    
     .nosotros-avion-largo {
         display: grid;
         width: 80%;
@@ -639,12 +796,6 @@ main {
         justify-self: flex-start;
     }
     
-    .opiniones-total {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-    
     .tarjeta-opiniones {
         width: 25%;
         max-width: 230px;
@@ -653,211 +804,10 @@ main {
         border-radius: 35px;
         box-shadow: 5px 5px 10px #363636;
     }
-    
-    .tarjeta-perfil {
-        display: flex;
-        margin: 0 15px;
-    }
-    
-    .tarjeta-foto {
-        width: 50px;
-        margin: 5px 0 0 0;
-        border-radius: 100%;
-    }
-    
-    .tarjeta-nombre {
-        margin-left: 15px;
-    }
-    
-    .tarjeta-texto {
-        margin: 0 0 10px 15px;
-        font-size: small;
-        align-self: center;
-    }
-}
 
-/* TERMINA CSS DE NOSOTROS */
+    /* CONTACTO 1024PX */
 
-
-
-/* COMIENZA CSS DE CONTACTO */
-
-.contacto-main {
-    padding-left: 10%;
-    padding-right: 10%;
-}
-
-.contacto-section {
-    padding-left: 15px;
-    padding-right: 15px;
-    background-color: #EAEBED;
-}
-
-.contacto-hdos {
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding-top: 40px;
-}
-
-.contacto-puno {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-
-.label {
-    font-weight: bold;
-    padding: 10px;
-}
-
-.div-correo, .div-nombre, .div-asunto, .div-texto, .div-boton {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 8px;
-    margin-bottom: 8px;
-}
-
-.contacto-chico {
-    font-size: 18px;
-    width: 90%;
-    padding: 3px 10px;
-    text-align: center;
-    border-style: solid;
-    border-radius: 20px;
-}
-
-.contacto-texto {
-    font-family: 'Albert Sans', sans-serif;
-    font-size: 18px;
-    width: 90%;
-    height: 405px;
-    padding: 10px;
-    border-style: solid;
-    border-radius: 20px;
-}
-
-.contacto-boton {
-    color: black;
-    background-color: #fc5050;
-    font-size: 18px;
-    padding: 3px 80px;
-    border-style: solid;
-    border-color: #ffffff;
-    border-radius: 15px;
-    box-shadow: 3px 3px 10px;
-    transition: 0.2s;
-    transition-timing-function: ease-out;
-}
-
-.contacto-boton:hover {
-    transform: scale(1.2);
-}
-
-.contacto-pdos {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    margin: 0;
-    padding-top: 20px;
-    padding-bottom: 40px;
-    padding-left: 25px;
-}
-
-@media(min-width:768px) {
-    .contacto-chico {
-        width: 400px;
-    }
-}
-
-@media(min-width:1024px) {
     .contacto-chico {
         width: 70%;
     }
 }
-/* TERMINA CSS DE CONTACTO */
-
-
-
-/* COMIENZA CSS DE FOOTER */
-
-.pie {
-    background-color: #c52e2e;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    min-height: 90px;
-}
-
-.pie__h3 {
-    font-size: 130%;
-    color: #fafafa;
-    margin-top: 2px;
-    margin-bottom: 2px;
-}
-
-.redes {
-    margin-bottom: 15px;
-    text-align: center;
-    width: 30%;
-}
-
-.pagos {
-    text-align: center;
-    width: 30%;
-}
-
-.atencion {
-    margin-top: 15px;
-    text-align: center;
-    width: 30%;
-}
-
-.wpp {
-    display: flex;
-    justify-content: center;
-}
-
-.hs {
-    align-self: center;
-}
-
-.logospie {
-    filter: invert(100);
-    margin: 5px;
-    width: 35px;
-    transition: 0.2s;
-}
-.logospie:hover {
-    transform: scale(1.3);
-}
-
-@media(min-width:768px) {
-    .pie {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
-        min-height: 90px;
-    }
-
-    .redes {
-        padding-left: 10px;
-        text-align: center;
-        width: 30%;
-    }
-
-    .atencion {
-        padding-right: 10px;
-        text-align: center;
-        width: 30%;
-    }
-}
-
-@media (min-width:1024) {
-
-}
-/* TERMINA CSS DE FOOTER */
