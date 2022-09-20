@@ -5,13 +5,12 @@ body {
     box-sizing: border-box;
 }
 
-main {
-    background-color: #fafafa
+/* HEADER */
+
+.logo {
+    width: 50px;
+    height: 50px;
 }
-
-
-
-/* HEADER HECHO CON BOOSTRAP */
 
 .logo:hover {
     animation-name: mover-logo;
@@ -31,14 +30,7 @@ main {
     }
 }
 
-/* HEADER HECHO CON BOOSTRAP */
-
-.logo {
-    width: 50px;
-    height: 50px;
-}
-
-/* COMIENZA CSS DE INDEX */
+/* INDEX */
 
 .banner {
     display: flex;
@@ -88,11 +80,7 @@ main {
     color: #000000;
 }
 
-/* TERMINA CSS DE INDEX */
-
-
-
-/* COMIENZA CSS DE DESTINOS */
+/* DESTINOS */
 
 .destinos-main {
     margin: 0 3rem;
@@ -153,16 +141,12 @@ main {
     width: 100%;
 }
 
-.tarjeta-text {
+.ciudad-text {
     font-size: smaller;
     margin: 0.5rem;
 }
 
-/* TERMINA CSS DE DESTINOS */
-
-
-
-/* COMIENZA CSS DE LOCALES */
+/* LOCALES */
 
 .locales-main {
     margin: 0 3rem;
@@ -195,11 +179,7 @@ main {
     padding: 0.7rem;
 }
 
-/* TERMINA CSS DE LOCALES */
-
-
-
-/* COMIENZA CSS DE NOSOTROS */
+/*  NOSOTROS */
 
 .nosotros-section {
     margin: 0 3rem;
@@ -290,9 +270,6 @@ main {
 
 .nosotros-flecha {
     display: none;
-    /* margin-top: 20px;
-    width: 95px;
-    justify-self: flex-start; */
 }
 
 .opiniones-total {
@@ -327,16 +304,11 @@ main {
 
 .tarjeta-texto {
     margin: 0 0.1rem 0.8rem 0.7rem;
-    font-size: small;
+    font-size: medium;
     align-self: center;
 }
 
-
-/* TERMINA CSS DE NOSOTROS */
-
-
-
-/* COMIENZA CSS DE CONTACTO */
+/* CONTACTO */
 
 .contacto-main {
 margin: 0 3rem;
@@ -416,11 +388,7 @@ margin: 0 3rem;
     padding: 1.25rem 0 2.5rem 1.5rem;
 }
 
-/* TERMINA CSS DE CONTACTO */
-
-
-
-/* COMIENZA CSS DE FOOTER */
+/* FOOTER */
 
 .pie {
     background-color: #c52e2e;
@@ -473,11 +441,17 @@ margin: 0 3rem;
     transform: scale(1.3);
 }
 
-/* TERMINA CSS DE FOOTER */
+
+
+
 
 @media (min-width:768px) {
 
     /* INDEX 768PX */
+
+    .viajes {
+        margin: 0 6rem;
+    }
 
     .paises {
         width: auto;
@@ -488,16 +462,29 @@ margin: 0 3rem;
         margin: 1.5rem;
         background-color: #fafafa;
     }
-    .tarjeta-text {
-        margin: 1rem;
+
+    /* DESTINOS 768 PX */
+
+    .destinos-main {
+        margin: 0 6rem;
+    }
+
+    .ciudad-text {
+        font-size: medium;
+        margin: 0.5rem;
+    }
+    
+
+    /* LOCALES 768PX */
+
+    .locales-main {
+        margin: 0 6rem;
     }
 
     /* NOSOTROS 768PX */
 
     .nosotros-section {
-        margin: 0 7rem;
-        padding: 0.7rem;
-        background-color: #EAEBED;
+        margin: 0 6rem;
     }
     
     .nosotros-datos {
@@ -629,6 +616,10 @@ margin: 0 3rem;
 
     /* CONTACTO 768PX */
 
+    .contacto-main {
+        margin: 0 6rem;
+        }
+
     .contacto-chico {
         width: 400px;
     }
@@ -658,9 +649,15 @@ margin: 0 3rem;
 
 
 
+
+
 @media (min-width:1024px) {
 
     /* INDEX 1024PX */
+
+    .viajes {
+        margin: 0 11rem;
+    }
 
     .tarjeta {
         margin: 1.25rem;
@@ -671,7 +668,23 @@ margin: 0 3rem;
         box-shadow: 2px 2px 20px #363636;
     }
 
+    /* DESTINOS 1024PX */
+
+    .destinos-main {
+        margin: 0 11rem;
+    }
+
+    .ciudad-text {
+        font-size: large;
+        margin: 0.5rem;
+    }
+    
+
     /* LOCALES 1024PX */
+
+    .locales-main {
+        margin: 0 11rem;
+    }
 
     .locales-div {
         display: flex;
@@ -694,11 +707,15 @@ margin: 0 3rem;
     }
 
     /* NOSOTROS 1024PX */
+
+    .nosotros-section {
+        margin: 0 11rem;
+    }
     
     .nosotros-datos {
         display: grid;
         grid-template-columns: repeat(4, 25%);
-        grid-template-rows: repeat(7, 1fr);
+        grid-template-rows: repeat(6, 1fr);
     }
     
     
@@ -755,7 +772,7 @@ margin: 0 3rem;
     .nosotros-objetivos{
         padding: 0.7rem;
         grid-column: 1/4;
-        grid-row: 6/7;
+        grid-row: 5/6;
         align-self: center;
         border-radius: 20px;
         background-color: #fafafa;
@@ -765,7 +782,7 @@ margin: 0 3rem;
     .nosotros-avion-arriba {
         width: 300px;
         grid-column: 4;
-        grid-row: 6/8;
+        grid-row: 5/7;
         align-self: center;
         justify-self: center;
     }
@@ -776,7 +793,7 @@ margin: 0 3rem;
         max-width: 480px;
         padding: 1rem;
         grid-column: 1/3;
-        grid-row: 7;
+        grid-row: 6;
         align-self: center;
         justify-self: flex-start;
     }
@@ -785,7 +802,7 @@ margin: 0 3rem;
         margin-top: 1.25rem;
         width: 95px;
         grid-column: 3/4;
-        grid-row: 7/8;
+        grid-row: 6/7;
         justify-self: flex-start;
     }
     
@@ -799,6 +816,10 @@ margin: 0 3rem;
     }
 
     /* CONTACTO 1024PX */
+
+    .contacto-main {
+        margin: 0 11rem;
+        }
 
     .contacto-chico {
         width: 70%;
