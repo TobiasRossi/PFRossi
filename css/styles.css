@@ -42,42 +42,16 @@ body {
     margin: 0 3rem;
 }
 
-.viajes__1, .viajes__2 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+.container-cards {
     background-color: #EAEBED;
 }
 
-.ir-a-destino {
-    text-decoration: none;
-}
-
 .paises {
-    width: 90%;
-    border-width: medium;
-    border-style: hidden;
-    border-radius: 20px;
-    box-shadow: 7px 7px 30px #363636;
-    margin: 3rem;
-    background-color: #fafafa;
-    transition: 0.5s;
+    transition: 0.2s;
 }
 
 .paises:hover {
-    transform: scale(1.1);
-}
-
-.paises-img {
-    width: 100%;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-}
-
-.paises-text {
-    text-align-last: center;
-    color: #000000;
+    transform: scale(1.05);
 }
 
 /* DESTINOS */
@@ -451,16 +425,6 @@ margin: 0 3rem;
 
     .viajes {
         margin: 0 6rem;
-    }
-
-    .paises {
-        width: auto;
-        border-width: medium;
-        border-style: hidden;
-        border-radius: 20px;
-        box-shadow: 7px 7px 30px #363636;
-        margin: 1.5rem;
-        background-color: #fafafa;
     }
 
     /* DESTINOS 768 PX */
