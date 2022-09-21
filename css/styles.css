@@ -619,9 +619,9 @@ margin: 0 3rem;
 
 
 
-@media (min-width:1024px) {
+@media (min-width:1200px) {
 
-    /* INDEX 1024PX */
+    /* INDEX 1200PX */
 
     .viajes {
         margin: 0 11rem;
@@ -636,7 +636,7 @@ margin: 0 3rem;
         box-shadow: 2px 2px 20px #363636;
     }
 
-    /* DESTINOS 1024PX */
+    /* DESTINOS 1200PX */
 
     .destinos-main {
         margin: 0 11rem;
@@ -648,7 +648,7 @@ margin: 0 3rem;
     }
     
 
-    /* LOCALES 1024PX */
+    /* LOCALES 1200PX */
 
     .locales-main {
         margin: 0 11rem;
@@ -674,7 +674,7 @@ margin: 0 3rem;
         text-align: start;
     }
 
-    /* NOSOTROS 1024PX */
+    /* NOSOTROS 1200PX */
 
     .nosotros-section {
         margin: 0 11rem;
@@ -783,7 +783,7 @@ margin: 0 3rem;
         box-shadow: 5px 5px 10px #363636;
     }
 
-    /* CONTACTO 1024PX */
+    /* CONTACTO 1200PX */
 
     .contacto-main {
         margin: 0 11rem;
