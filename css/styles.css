@@ -609,6 +609,10 @@ margin: 0 3rem;
         text-align: center;
         width: 30%;
     }
+
+    .redes, .atencion {
+        margin: 0;
+    }
 }
 
 
