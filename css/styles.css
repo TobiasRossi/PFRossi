@@ -342,14 +342,14 @@ margin: 0 3rem;
 }
 
 .contacto__boton {
-    color: black;
-    background-color: #fc5050;
+    color: #ffffff;
+    background-color: #214d72;
     font-size: 18px;
     padding: 0.25rem 5rem;
     border-style: solid;
     border-color: #ffffff;
     border-radius: 15px;
-    box-shadow: 3px 3px 10px;
+    box-shadow: 3px 3px 10px #919191;
     transition: 0.2s;
     transition-timing-function: ease-out;
 }
@@ -584,7 +584,7 @@ margin: 0 3rem;
         }
 
     .contacto__llenar {
-        width: 400px;
+        width: 75%;
     }
 
     .contacto__texto {
@@ -618,9 +618,9 @@ margin: 0 3rem;
     }
 }
 
-@media (min-width:1200px) {
+@media (min-width:992px) {
 
-    /* INDEX 1200PX */
+    /* INDEX 992PX */
 
     .viajes {
         margin: 0 11rem;
@@ -635,7 +635,7 @@ margin: 0 3rem;
         box-shadow: 2px 2px 20px #363636;
     }
 
-    /* DESTINOS 1200PX */
+    /* DESTINOS 992PX */
 
     .destinos {
         margin: 0 11rem;
@@ -647,7 +647,7 @@ margin: 0 3rem;
     }
     
 
-    /* LOCALES 1200PX */
+    /* LOCALES 992PX */
 
     .locales {
         margin: 0 11rem;
@@ -670,7 +670,7 @@ margin: 0 3rem;
         text-align: start;
     }
 
-    /* NOSOTROS 1200PX */
+    /* NOSOTROS 992PX */
 
     .nosotros {
         margin: 0 11rem;
@@ -779,14 +779,14 @@ margin: 0 3rem;
         box-shadow: 5px 5px 10px #363636;
     }
 
-    /* CONTACTO 1200PX */
+    /* CONTACTO 992PX */
 
     .contacto {
         margin: 0 11rem;
         }
 
     .contacto__llenar {
-        width: 70%;
+        width: 65%;
     }
 
     .contacto__texto {
