@@ -1,0 +1,76 @@
+.contacto {
+    margin: 0 3rem;
+    &__section {
+        padding: 0 1rem;
+        background-color: #EAEBED;
+    }
+    &__titulo {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding-top: 2.5rem;
+    }
+    &__primer-texto {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    &__label {
+        font-weight: bold;
+        padding: 0.7rem;
+    }
+    &__informacion {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0.5rem 0;
+    }
+    &__llenar {
+        font-size: 18px;
+        width: 90%;
+        padding: 0.25rem 0.7rem;
+        text-align: center;
+        border-style: solid;
+        border-radius: 20px;
+    }
+    &__texto {
+        font-size: 18px;
+        width: 90%;
+        height: 405px;
+        padding: 0.7rem;
+        border-style: solid;
+        border-radius: 20px;
+    }
+    &__segundo-texto {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin: 0;
+        padding: 1.25rem 0 2.5rem 1.5rem;
+    }
+}
+
+@media (min-width:768px) {
+    .contacto {
+        margin: 0 6rem;
+        &__llenar {
+            width: 75%;
+        }
+        &__texto {
+            width: 80%;
+        }
+    }
+}
+
+@media (min-width:992px) {
+    .contacto {
+        margin: 0 11rem;
+        &__llenar {
+            width: 65%;
+        }
+        &__texto {
+            width: 65%;
+        }
+        }
+}

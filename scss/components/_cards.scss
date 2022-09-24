@@ -1,0 +1,64 @@
+.viajes {
+    &__paises{
+        transition: 0.2s;
+        &:hover {
+            transform: scale(1.05);
+        }        
+    }
+}
+
+.destinos {
+    &__tarjeta {
+        margin: 1.25rem;
+        text-align: center;
+        background-color: #fafafa;
+        border-radius: 30px;
+        width: 30vw;
+        box-shadow: 2px 2px 15px #363636;
+        &-img {
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
+            width: 100%;
+        }
+        &-text {
+            font-size: smaller;
+            margin: 0.5rem;
+        }
+    }
+}
+
+.locales {
+    &__tarjeta {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 1rem;
+        border-radius: 30px;
+        background-color: #dfdfdf;
+        box-shadow: 5px 5px 10px #363636;
+    }
+}
+
+.nosotros {
+    &__tarjeta {
+        width: auto;
+        max-width: 230px;
+        background: #fafafa;
+        margin: 1rem;
+        border-radius: 35px;
+        box-shadow: 5px 5px 10px #363636;
+        &-foto {
+            width: 50px;
+            margin: 0.2rem 0 0 0;
+            border-radius: 100%;
+        }
+        &-nombre {
+            margin: 0.8rem 0 0 1rem;
+        }
+        &-texto {
+            margin: 0 0.1rem 0.8rem 0.7rem;
+            font-size: medium;
+            align-self: center;
+        }
+    }
+}

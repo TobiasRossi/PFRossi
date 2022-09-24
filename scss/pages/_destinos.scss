@@ -1,0 +1,68 @@
+.destinos {
+    margin: 0 3rem;
+    background-color: #EAEBED;
+    &__titulo {
+        margin: 0;
+        padding: 1rem
+    }
+    &__pais {
+        margin-top: 1rem;
+        margin-left: 1.5rem;
+        font-size: 1.5rem;
+    }
+    &__ciudades {
+        padding: 0 0.5rem;
+        margin: 0 1rem;
+        display: grid;
+        grid-auto-flow: column;
+        overflow-x: auto;
+        overscroll-behavior-inline: contain;
+    }
+}
+
+::-webkit-scrollbar {
+    height: 1rem;
+}
+
+::-webkit-scrollbar-track {
+    background: #EAEBED;
+    border-radius: 100vw;
+    margin-inline: 1.2rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #c0c0c0;
+    border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #919191;
+}
+
+@media (min-width:768px) {
+    .destinos {
+        margin: 0 6rem;
+        &__tarjeta-text {
+            font-size: medium;
+            margin: 0.5rem;
+        }
+    }
+}
+
+@media (min-width:992px) {
+    .destinos{
+        margin: 0 11rem;
+        &__tarjeta {
+            margin: 1.25rem;
+            text-align: center;
+            background-color: #fafafa;
+            border-radius: 40px;
+            width: 23vw;
+            box-shadow: 2px 2px 20px #363636;
+            &-text {
+                font-size: large;
+                margin: 0.5rem;
+            }
+        }
+    }
+}

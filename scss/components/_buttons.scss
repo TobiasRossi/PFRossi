@@ -1,0 +1,17 @@
+.contacto {
+    &__boton {
+        color: #ffffff;
+        background-color: #214d72;
+        font-size: 18px;
+        padding: 0.25rem 5rem;
+        border-style: solid;
+        border-color: #ffffff;
+        border-radius: 15px;
+        box-shadow: 3px 3px 10px #919191;
+        transition: 0.2s;
+        transition-timing-function: ease-out;
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+}

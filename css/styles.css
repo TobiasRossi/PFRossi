@@ -1,795 +1,668 @@
 body {
-    font-family: 'Albert Sans', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* HEADER */
+body {
+  font-family: "Albert Sans", sans-serif;
+}
 
 .navbar {
-    background-color: #1d3752
-}
-
-.logo {
-    width: 50px;
-    height: 50px;
-}
-
-.logo:hover {
-    animation-name: mover-logo;
-    animation-duration: 2.5s;
+  background-color: #1d3752;
 }
 
 @keyframes mover-logo {
-    0% {
-        transform: translate(0px);
-    }
-    50% {
-        transform: translate(180px) rotateY(180deg);
-        
-    }
-    100% {
-        transform: translate(0px);
-    }
+  50% {
+    transform: rotateY(180deg);
+  }
+}
+.logo {
+  width: 50px;
+  height: 50px;
+}
+.logo:hover {
+  animation-name: mover-logo;
+  animation-duration: 2.5s;
 }
 
-/* INDEX */
+.footer {
+  background-color: #1d3752;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  min-height: 90px;
+}
+.footer__h3 {
+  font-size: 130%;
+  color: #fafafa;
+  margin: 0.5rem;
+}
+.footer__redes {
+  margin-bottom: 1rem;
+  text-align: center;
+  width: 30%;
+}
+.footer__pagos {
+  text-align: center;
+  width: 30%;
+}
+.footer__telefono {
+  margin-top: 1rem;
+  text-align: center;
+  width: 30%;
+}
+.footer__h3-telefono {
+  align-self: center;
+}
+.footer__logos {
+  filter: invert(100);
+  margin: 0.2rem;
+  width: 35px;
+  transition: 0.2s;
+}
+.footer__logos:hover {
+  transform: scale(1.3);
+}
 
-.banner {
+@media (min-width: 768px) {
+  .footer {
     display: flex;
-    justify-self: center;
-    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 90px;
+  }
+  .footer__redes {
+    margin: 0;
+    padding-left: 0.7rem;
+    text-align: center;
+    width: 30%;
+  }
+  .footer__telefono {
+    margin: 0;
+    padding-right: 0.7rem;
+    text-align: center;
+    width: 30%;
+  }
 }
-
-.viajes {
-    margin: 0 3rem;
+.contacto__boton {
+  color: #ffffff;
+  background-color: #214d72;
+  font-size: 18px;
+  padding: 0.25rem 5rem;
+  border-style: solid;
+  border-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 3px 3px 10px #919191;
+  transition: 0.2s;
+  transition-timing-function: ease-out;
 }
-
-.viajes__cards {
-    background-color: #EAEBED;
+.contacto__boton:hover {
+  transform: scale(1.2);
 }
 
 .viajes__paises {
-    transition: 0.2s;
+  transition: 0.2s;
 }
-
 .viajes__paises:hover {
-    transform: scale(1.05);
-}
-
-/* DESTINOS */
-
-.destinos {
-    margin: 0 3rem;
-    background-color: #EAEBED;
-}
-
-.destinos__titulo {
-    margin: 0;
-    padding: 1rem
-}
-
-.destinos__pais {
-    margin-top: 1rem;
-    margin-left: 1.5rem;
-    font-size: 1.5rem;
-}
-
-.destinos__ciudades {
-    padding: 0 0.5rem;
-    margin: 0 1rem;
-    display: grid;
-    grid-auto-flow: column;
-    overflow-x: auto;
-    overscroll-behavior-inline: contain;
-}
-
-::-webkit-scrollbar {
-    height: 1rem;
-}
-
-::-webkit-scrollbar-track {
-    background: #EAEBED;
-    border-radius: 100vw;
-    margin-inline: 1.2rem;
-}
-
-::-webkit-scrollbar-thumb {
-    background: #c0c0c0;
-    border-radius: 100vw;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #919191;
+  transform: scale(1.05);
 }
 
 .destinos__tarjeta {
-    margin: 1.25rem;
-    text-align: center;
-    background-color: #fafafa;
-    border-radius: 30px;
-    width: 30vw;
-    box-shadow: 2px 2px 15px #363636;
+  margin: 1.25rem;
+  text-align: center;
+  background-color: #fafafa;
+  border-radius: 30px;
+  width: 30vw;
+  box-shadow: 2px 2px 15px #363636;
 }
-
 .destinos__tarjeta-img {
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    width: 100%;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  width: 100%;
 }
-
 .destinos__tarjeta-text {
-    font-size: smaller;
-    margin: 0.5rem;
-}
-
-/* LOCALES */
-
-.locales {
-    margin: 0 3rem;
-    background-color: #EAEBED;
-    padding-top: 0.7rem;
-    padding-bottom: 0.7rem;
+  font-size: smaller;
+  margin: 0.5rem;
 }
 
 .locales__tarjeta {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 1rem;
-    border-radius: 30px;
-    background-color: #dfdfdf;
-    box-shadow: 5px 5px 10px #363636;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+  border-radius: 30px;
+  background-color: #dfdfdf;
+  box-shadow: 5px 5px 10px #363636;
 }
 
-.locales__mapa {
-    min-width: 200px;
-    width: 70%;
-    max-width: 400px;
-    height: 17.5rem;
-    margin: 1rem 0;
-    border-radius: 10%;
+.nosotros__tarjeta {
+  width: auto;
+  max-width: 230px;
+  background: #fafafa;
+  margin: 1rem;
+  border-radius: 35px;
+  box-shadow: 5px 5px 10px #363636;
+}
+.nosotros__tarjeta-foto {
+  width: 50px;
+  margin: 0.2rem 0 0 0;
+  border-radius: 100%;
+}
+.nosotros__tarjeta-nombre {
+  margin: 0.8rem 0 0 1rem;
+}
+.nosotros__tarjeta-texto {
+  margin: 0 0.1rem 0.8rem 0.7rem;
+  font-size: medium;
+  align-self: center;
 }
 
-.locales__text {
+.contacto {
+  margin: 0 3rem;
+}
+.contacto__section {
+  padding: 0 1rem;
+  background-color: #EAEBED;
+}
+.contacto__titulo {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding-top: 2.5rem;
+}
+.contacto__primer-texto {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.contacto__label {
+  font-weight: bold;
+  padding: 0.7rem;
+}
+.contacto__informacion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem 0;
+}
+.contacto__llenar {
+  font-size: 18px;
+  width: 90%;
+  padding: 0.25rem 0.7rem;
+  text-align: center;
+  border-style: solid;
+  border-radius: 20px;
+}
+.contacto__texto {
+  font-size: 18px;
+  width: 90%;
+  height: 405px;
+  padding: 0.7rem;
+  border-style: solid;
+  border-radius: 20px;
+}
+.contacto__segundo-texto {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin: 0;
+  padding: 1.25rem 0 2.5rem 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .contacto {
+    margin: 0 6rem;
+  }
+  .contacto__llenar {
+    width: 75%;
+  }
+  .contacto__texto {
+    width: 80%;
+  }
+}
+@media (min-width: 992px) {
+  .contacto {
+    margin: 0 11rem;
+  }
+  .contacto__llenar {
+    width: 65%;
+  }
+  .contacto__texto {
+    width: 65%;
+  }
+}
+.destinos {
+  margin: 0 3rem;
+  background-color: #EAEBED;
+}
+.destinos__titulo {
+  margin: 0;
+  padding: 1rem;
+}
+.destinos__pais {
+  margin-top: 1rem;
+  margin-left: 1.5rem;
+  font-size: 1.5rem;
+}
+.destinos__ciudades {
+  padding: 0 0.5rem;
+  margin: 0 1rem;
+  display: grid;
+  grid-auto-flow: column;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+}
+
+::-webkit-scrollbar {
+  height: 1rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #EAEBED;
+  border-radius: 100vw;
+  margin-inline: 1.2rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c0c0c0;
+  border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #919191;
+}
+
+@media (min-width: 768px) {
+  .destinos {
+    margin: 0 6rem;
+  }
+  .destinos__tarjeta-text {
+    font-size: medium;
+    margin: 0.5rem;
+  }
+}
+@media (min-width: 992px) {
+  .destinos {
+    margin: 0 11rem;
+  }
+  .destinos__tarjeta {
+    margin: 1.25rem;
     text-align: center;
-    padding: 0.7rem;
+    background-color: #fafafa;
+    border-radius: 40px;
+    width: 23vw;
+    box-shadow: 2px 2px 20px #363636;
+  }
+  .destinos__tarjeta-text {
+    font-size: large;
+    margin: 0.5rem;
+  }
+}
+.banner {
+  display: flex;
+  justify-self: center;
+  width: 100%;
 }
 
-/*  NOSOTROS */
+.viajes {
+  margin: 0 3rem;
+}
+.viajes__cards {
+  background-color: #EAEBED;
+}
 
+@media (min-width: 768px) {
+  .viajes {
+    margin: 0 6rem;
+  }
+}
+@media (min-width: 992px) {
+  .viajes {
+    margin: 0 11rem;
+  }
+}
+.locales {
+  margin: 0 3rem;
+  background-color: #EAEBED;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+}
+.locales__mapa {
+  min-width: 200px;
+  width: 70%;
+  max-width: 400px;
+  height: 17.5rem;
+  margin: 1rem 0;
+  border-radius: 10%;
+}
+.locales__text {
+  text-align: center;
+  padding: 0.7rem;
+}
+
+@media (min-width: 768px) {
+  .locales {
+    margin: 0 6rem;
+  }
+}
+@media (min-width: 992px) {
+  .locales {
+    margin: 0 11rem;
+  }
+  .locales__tarjeta {
+    display: flex;
+    flex-direction: row;
+    margin: 1.5rem;
+  }
+  .locales__mapa {
+    width: 80%;
+    max-width: 450px;
+    padding: 1.5rem;
+    border-radius: 30px;
+  }
+  .locales__text {
+    text-align: start;
+  }
+}
 .nosotros {
-    margin: 0 3rem;
-    padding: 0.8rem;
-    background-color: #EAEBED;
+  margin: 0 3rem;
+  padding: 0.8rem;
+  background-color: #EAEBED;
 }
-
 .nosotros__informacion {
-    display: grid;
-    grid-template-rows: repeat(4, 1fr);
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+}
+.nosotros__titulo {
+  margin: 0;
+  padding: 0.7rem;
+}
+.nosotros__historia {
+  padding: 0.8rem;
+  align-self: center;
+  border-radius: 20px;
+  background-color: #fafafa;
+  box-shadow: 5px 5px 10px #363636;
+}
+.nosotros__avion {
+  display: none;
+  width: 100%;
+  align-self: center;
+  justify-self: center;
+}
+.nosotros__foto {
+  margin-bottom: 2rem;
+  width: 70%;
+  border-radius: 100%;
+  align-self: center;
+  justify-self: center;
+  background-color: #fafafa;
+  box-shadow: 5px 5px 10px #363636;
+  padding: 1.5rem;
+}
+.nosotros__somos {
+  padding: 0.8rem;
+  align-self: center;
+  border-radius: 20px;
+  background-color: #fafafa;
+  box-shadow: 5px 5px 10px #363636;
+}
+.nosotros__avion-rulo {
+  display: none;
+  width: 80%;
+  max-width: 425px;
+  align-self: center;
+  justify-self: center;
+}
+.nosotros__objetivos {
+  padding: 0.7rem;
+  height: auto;
+  border-radius: 20px;
+  background-color: #fafafa;
+  box-shadow: 5px 5px 10px #363636;
+}
+.nosotros__avion-arriba {
+  display: none;
+  width: 300px;
+  align-self: center;
+  justify-self: center;
+}
+.nosotros__ellos {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+.nosotros__avion-largo {
+  display: none;
+  width: 80%;
+  max-width: 480px;
+  padding: 1rem;
+  align-self: center;
+  justify-self: flex-start;
+}
+.nosotros__flecha {
+  display: none;
+}
+.nosotros__tarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.nosotros__perfil {
+  display: flex;
+  margin: 0 1rem;
 }
 
-.nosotros__titulo {
+@media (min-width: 768px) {
+  .nosotros {
+    margin: 0 6rem;
+  }
+  .nosotros__informacion {
+    display: grid;
+    grid-template-rows: repeat(7, 1fr);
+  }
+  .nosotros__titulo {
     margin: 0;
     padding: 0.7rem;
-}
-
-.nosotros__historia{
-    padding: 0.8rem;
+  }
+  .nosotros__historia {
+    padding: 0.7rem;
     align-self: center;
     border-radius: 20px;
     background-color: #fafafa;
     box-shadow: 5px 5px 10px #363636;
-}
-
-.nosotros__avion {
-    display: none;
-    width: 100%;
+  }
+  .nosotros__avion {
+    display: grid;
+    width: 40%;
     align-self: center;
     justify-self: center;
-}
-
-.nosotros__foto {
-    width: 70%;
+  }
+  .nosotros__foto {
+    width: 45%;
     border-radius: 100%;
     align-self: center;
     justify-self: center;
     background-color: #fafafa;
     box-shadow: 5px 5px 10px #363636;
-    padding: 1.5rem;
-}
-
-.nosotros-somos{
-    padding: 0.8rem;
+    padding: 2rem;
+  }
+  .nosotros__somos {
+    margin: 0;
+    padding: 0.7rem;
     align-self: center;
     border-radius: 20px;
     background-color: #fafafa;
     box-shadow: 5px 5px 10px #363636;
-}
-
-.nosotros__avion-rulo {
+  }
+  .nosotros__avion-rulo {
     display: none;
     width: 80%;
     max-width: 425px;
     align-self: center;
     justify-self: center;
-}
-
-.nosotros__objetivos{
+  }
+  .nosotros__objetivos {
     padding: 0.7rem;
-    height: auto;
+    align-self: center;
     border-radius: 20px;
     background-color: #fafafa;
     box-shadow: 5px 5px 10px #363636;
-}
-
-.nosotros__avion-arriba {
-    display: none;
+  }
+  .nosotros__avion-arriba {
+    display: grid;
+    grid-row: 5;
     width: 300px;
     align-self: center;
     justify-self: center;
-}
-
-.nosotros__ellos {
-    margin-top: 2rem;
-    display: flex;
-    justify-content: center;
-}
-
-.nosotros__avion-largo {
+  }
+  .nosotros__avion-largo {
     display: none;
     width: 80%;
     max-width: 480px;
     padding: 1rem;
     align-self: center;
     justify-self: flex-start;
-}
-
-.nosotros__flecha {
-    display: none;
-}
-
-.nosotros__tarjetas {
+  }
+  .nosotros__flecha {
+    display: grid;
+    grid-row: 7;
+    margin-top: 1.5rem;
+    width: 160px;
+    justify-self: center;
+    align-self: center;
+  }
+  .nosotros__tarjetas {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-}
-
-.nosotros__tarjeta {
+  }
+  .nosotros__tarjeta {
     width: auto;
     max-width: 230px;
     background: #fafafa;
-    margin: 1rem;
+    margin: 0.8rem;
     border-radius: 35px;
     box-shadow: 5px 5px 10px #363636;
-}
-
-.nosotros__perfil {
+  }
+  .nosotros__tarjeta-foto {
+    width: 50px;
+    margin: 0.3rem 0 0 0;
+    border-radius: 100%;
+  }
+  .nosotros__tarjeta-nombre {
+    margin-left: 1rem;
+  }
+  .nosotros__tarjeta-texto {
+    margin: 0 0.2rem 0.8rem 0.6rem;
+    font-size: small;
+    align-self: center;
+  }
+  .nosotros__perfil {
     display: flex;
     margin: 0 1rem;
+  }
 }
-
-.nosotros__tarjeta-foto {
-    width: 50px;
-    margin: 0.2rem 0 0 0;
+@media (min-width: 992px) {
+  .nosotros {
+    margin: 0 11rem;
+  }
+  .nosotros__informacion {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(6, 1fr);
+  }
+  .nosotros__historia {
+    padding: 0.7rem;
+    grid-column: 1/4;
+    grid-row: 1/3;
+    align-self: center;
+    border-radius: 20px;
+    background-color: #fafafa;
+    box-shadow: 5px 5px 10px #363636;
+  }
+  .nosotros__avion {
+    width: 90%;
+    grid-column: 4;
+    grid-row: 2/4;
+    align-self: center;
+    justify-self: center;
+  }
+  .nosotros__foto {
+    width: 100%;
     border-radius: 100%;
-}
-
-.nosotros__tarjeta-nombre {
-    margin: 0.8rem 0 0 1rem;
-}
-
-.nosotros__tarjeta-texto {
-    margin: 0 0.1rem 0.8rem 0.7rem;
-    font-size: medium;
+    grid-column: 1;
+    grid-row: 3/5;
     align-self: center;
-}
-
-/* CONTACTO */
-
-.contacto {
-margin: 0 3rem;
-}
-
-.contacto__section {
-    padding: 0 1rem;
-    background-color: #EAEBED;
-}
-
-.contacto__titulo {
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding-top: 2.5rem;
-}
-
-.contacto__primer-texto {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-
-.contacto__label {
-    font-weight: bold;
+    justify-self: center;
+    background-color: #fafafa;
+    box-shadow: 5px 5px 10px #363636;
+    padding: 1.5rem;
+  }
+  .nosotros__somos {
+    margin-left: 2.5rem;
     padding: 0.7rem;
-}
-
-.contacto__informacion {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0.5rem 0;
-}
-
-.contacto__llenar {
-    font-size: 18px;
-    width: 90%;
-    padding: 0.25rem 0.7rem;
-    text-align: center;
-    border-style: solid;
-    border-radius: 20px;
-}
-
-.contacto__texto {
-    font-size: 18px;
-    width: 90%;
-    height: 405px;
-    padding: 0.7rem;
-    border-style: solid;
-    border-radius: 20px;
-}
-
-.contacto__boton {
-    color: #ffffff;
-    background-color: #214d72;
-    font-size: 18px;
-    padding: 0.25rem 5rem;
-    border-style: solid;
-    border-color: #ffffff;
-    border-radius: 15px;
-    box-shadow: 3px 3px 10px #919191;
-    transition: 0.2s;
-    transition-timing-function: ease-out;
-}
-
-.contacto-boton:hover {
-    transform: scale(1.2);
-}
-
-.contacto__segundo-texto {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    margin: 0;
-    padding: 1.25rem 0 2.5rem 1.5rem;
-}
-
-/* FOOTER */
-
-.footer {
-    background-color: #1d3752;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    min-height: 90px;
-}
-
-.footer__h3 {
-    font-size: 130%;
-    color: #fafafa;
-    margin: 0.5rem;
-}
-
-.footredes {
-    margin-bottom: 1rem;
-    text-align: center;
-    width: 30%;
-}
-
-.footer__pagos {
-    text-align: center;
-    width: 30%;
-}
-
-.footer__telefono {
-    margin-top: 1rem;
-    text-align: center;
-    width: 30%;
-}
-
-.footer__h3-telefono {
+    grid-column: 2/4;
+    grid-row: 3/5;
     align-self: center;
+    border-radius: 20px;
+    background-color: #fafafa;
+    box-shadow: 5px 5px 10px #363636;
+  }
+  .nosotros__avion-rulo {
+    width: 80%;
+    max-width: 425px;
+    grid-column: 2/4;
+    grid-row: 5;
+    align-self: center;
+    justify-self: center;
+  }
+  .nosotros__objetivos {
+    padding: 0.7rem;
+    grid-column: 1/4;
+    grid-row: 5/6;
+    align-self: center;
+    border-radius: 20px;
+    background-color: #fafafa;
+    box-shadow: 5px 5px 10px #363636;
+  }
+  .nosotros__avion-arriba {
+    width: 300px;
+    grid-column: 4;
+    grid-row: 5/7;
+    align-self: center;
+    justify-self: center;
+  }
+  .nosotros__avion-largo {
+    display: grid;
+    width: 80%;
+    max-width: 480px;
+    padding: 1rem;
+    grid-column: 1/3;
+    grid-row: 6;
+    align-self: center;
+    justify-self: flex-start;
+  }
+  .nosotros__flecha {
+    margin-top: 1.25rem;
+    width: 95px;
+    grid-column: 3/4;
+    grid-row: 6/7;
+    justify-self: flex-start;
+  }
+  .nosotros__tarjeta {
+    width: 25%;
+    max-width: 230px;
+    background: #fafafa;
+    margin: 0.7rem;
+    border-radius: 35px;
+    box-shadow: 5px 5px 10px #363636;
+  }
 }
 
-.footer__logos {
-    filter: invert(100);
-    margin: 0.2rem;
-    width: 35px;
-    transition: 0.2s;
-}
-.footer__logos:hover {
-    transform: scale(1.3);
-}
-
-
-
-
-
-@media (min-width:768px) {
-
-    /* INDEX 768PX */
-
-    .viajes {
-        margin: 0 6rem;
-    }
-
-    /* DESTINOS 768 PX */
-
-    .destinos {
-        margin: 0 6rem;
-    }
-
-    .destinos__tarjeta-text {
-        font-size: medium;
-        margin: 0.5rem;
-    }
-    
-
-    /* LOCALES 768PX */
-
-    .locales {
-        margin: 0 6rem;
-    }
-
-    /* NOSOTROS 768PX */
-
-    .nosotros {
-        margin: 0 6rem;
-    }
-    
-    .nosotros__informacion {
-        display: grid;
-        grid-template-rows: repeat(7, 1fr);
-    }
-    
-    .nosotros__titulo {
-        margin: 0;
-        padding: 0.7rem;
-    }
-    
-    .nosotros__historia {
-        padding: 0.7rem;
-        align-self: center;
-        border-radius: 20px;
-        background-color: #fafafa;
-        box-shadow: 5px 5px 10px #363636;
-    }
-    
-    .nosotros__avion {
-        display: grid;
-        width: 40%;
-        align-self: center;
-        justify-self: center;
-    }
-    
-    .nosotros__foto {
-        width: 45%;
-        border-radius: 100%;
-        align-self: center;
-        justify-self: center;
-        background-color: #fafafa;
-        box-shadow: 5px 5px 10px #363636;
-        padding: 2rem;
-    }
-    
-    .nosotros-somos{
-        margin: 0;
-        padding: 0.7rem;
-        align-self: center;
-        border-radius: 20px;
-        background-color: #fafafa;
-        box-shadow: 5px 5px 10px #363636;
-    }
-    
-    .nosotros__avion-rulo {
-        display: none;
-        width: 80%;
-        max-width: 425px;
-        align-self: center;
-        justify-self: center;
-    }
-    
-    .nosotros__objetivos{
-        padding: 0.7rem;
-        align-self: center;
-        border-radius: 20px;
-        background-color: #fafafa;
-        box-shadow: 5px 5px 10px #363636;
-    }
-    
-    .nosotros__avion-arriba {
-        display: grid;
-        grid-row: 5;
-        width: 300px;
-        align-self: center;
-        justify-self: center;
-    }
-    
-    .nosotros-ellos {
-        display: flex;
-        justify-content: center;
-    }
-    
-    .nosotros__avion-largo {
-        display: none;
-        width: 80%;
-        max-width: 480px;
-        padding: 1rem;
-        align-self: center;
-        justify-self: flex-start;
-    }
-    
-    .nosotros__flecha {
-        display: grid;
-        grid-row: 7;
-        margin-top: 1.5rem;
-        width: 160px;
-        justify-self: center;
-        align-self: center;
-    }
-    
-    .nosotros__tarjetas {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-    
-    .nosotros__tarjeta {
-        width: auto;
-        max-width: 230px;
-        background: #fafafa;
-        margin: 0.8rem;
-        border-radius: 35px;
-        box-shadow: 5px 5px 10px #363636;
-    }
-    
-    .nosotros__perfil {
-        display: flex;
-        margin: 0 1rem;
-    }
-    
-    .nosotros__tarjeta-foto {
-        width: 50px;
-        margin: 0.3rem 0 0 0;
-        border-radius: 100%;
-    }
-    
-    .tarjeta-nombre {
-        margin-left: 1rem;
-    }
-    
-    .nosotros__tarjeta-texto {
-        margin: 0 0.2rem 0.8rem 0.6rem;
-        font-size: small;
-        align-self: center;
-    }
-
-    /* CONTACTO 768PX */
-
-    .contacto {
-        margin: 0 6rem;
-        }
-
-    .contacto__llenar {
-        width: 75%;
-    }
-
-    .contacto__texto {
-        width: 80%;
-    }
-
-    /* FOOTER 768PX */ 
-
-    .footer {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
-        min-height: 90px;
-    }
-
-    .footer__redes {
-        padding-left: 0.7rem;
-        text-align: center;
-        width: 30%;
-    }
-
-    .footer__telefono {
-        padding-right: 0.7rem;
-        text-align: center;
-        width: 30%;
-    }
-
-    .footer__redes, .footer__telefono {
-        margin: 0;
-    }
-}
-
-@media (min-width:992px) {
-
-    /* INDEX 992PX */
-
-    .viajes {
-        margin: 0 11rem;
-    }
-
-    .tarjeta {
-        margin: 1.25rem;
-        text-align: center;
-        background-color: #fafafa;
-        border-radius: 40px;
-        width: 23vw;
-        box-shadow: 2px 2px 20px #363636;
-    }
-
-    /* DESTINOS 992PX */
-
-    .destinos {
-        margin: 0 11rem;
-    }
-
-    .destinos__tarjeta-text {
-        font-size: large;
-        margin: 0.5rem;
-    }
-    
-
-    /* LOCALES 992PX */
-
-    .locales {
-        margin: 0 11rem;
-    }
-
-    .locales__tarjeta {
-        display: flex;
-        flex-direction: row;
-        margin: 1.5rem;
-    }
-
-    .locales__mapa {
-        width: 80%;
-        max-width: 450px;
-        padding: 1.5rem;
-        border-radius: 30px;
-    }
-
-    .locales__text {
-        text-align: start;
-    }
-
-    /* NOSOTROS 992PX */
-
-    .nosotros {
-        margin: 0 11rem;
-    }
-    
-    .nosotros__informacion {
-        display: grid;
-        grid-template-columns: repeat(4, 25%);
-        grid-template-rows: repeat(6, 1fr);
-    }
-    
-    
-    .nosotros__historia{
-        padding: 0.7rem;
-        grid-column: 1/4;
-        grid-row: 1/3;
-        align-self: center;
-        border-radius: 20px;
-        background-color: #fafafa;
-        box-shadow: 5px 5px 10px #363636;
-    }
-    
-    .nosotros__avion{
-        width: 90%;
-        grid-column: 4;
-        grid-row: 2/4;
-        align-self: center;
-        justify-self: center;
-    }
-    
-    .nosotros__foto {
-        width: 100%;
-        border-radius: 100%;
-        grid-column: 1;
-        grid-row: 3/5;
-        align-self: center;
-        justify-self: center;
-        background-color: #fafafa;
-        box-shadow: 5px 5px 10px #363636;
-        padding: 1.5rem;
-    }
-    
-    .nosotros-somos{
-        margin-left: 2.5rem;
-        padding: 0.7rem;
-        grid-column: 2/4;
-        grid-row: 3/5;
-        align-self: center;
-        border-radius: 20px;
-        background-color: #fafafa;
-        box-shadow: 5px 5px 10px #363636;
-    }
-    
-    .nosotros__avion-rulo {
-        width: 80%;
-        max-width: 425px;
-        grid-column: 2/4;
-        grid-row: 5;
-        align-self: center;
-        justify-self: center;
-    }
-    
-    .nosotros__objetivos {
-        padding: 0.7rem;
-        grid-column: 1/4;
-        grid-row: 5/6;
-        align-self: center;
-        border-radius: 20px;
-        background-color: #fafafa;
-        box-shadow: 5px 5px 10px #363636;
-    }
-    
-    .nosotros__avion-arriba {
-        width: 300px;
-        grid-column: 4;
-        grid-row: 5/7;
-        align-self: center;
-        justify-self: center;
-    }
-    
-    .nosotros__avion-largo {
-        display: grid;
-        width: 80%;
-        max-width: 480px;
-        padding: 1rem;
-        grid-column: 1/3;
-        grid-row: 6;
-        align-self: center;
-        justify-self: flex-start;
-    }
-    
-    .nosotros__flecha {
-        margin-top: 1.25rem;
-        width: 95px;
-        grid-column: 3/4;
-        grid-row: 6/7;
-        justify-self: flex-start;
-    }
-    
-    .nosotros__tarjeta {
-        width: 25%;
-        max-width: 230px;
-        background: #fafafa;
-        margin: 0.7rem;
-        border-radius: 35px;
-        box-shadow: 5px 5px 10px #363636;
-    }
-
-    /* CONTACTO 992PX */
-
-    .contacto {
-        margin: 0 11rem;
-        }
-
-    .contacto__llenar {
-        width: 65%;
-    }
-
-    .contacto__texto {
-        width: 65%;
-    }
-}
+/*# sourceMappingURL=styles.css.map */
