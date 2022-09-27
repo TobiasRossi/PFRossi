@@ -109,6 +109,9 @@ body {
 .viajes__paises:hover {
   transform: scale(1.05);
 }
+.viajes__bandera {
+  filter: saturate(82%);
+}
 
 .destinos__tarjeta {
   margin: 1.25rem;
