@@ -49,10 +49,7 @@
         margin: 0;
         padding: 1.25rem 0 2.5rem 1.5rem;
     }
-}
-
-@media (min-width:768px) {
-    .contacto {
+    @include responsive-medium {
         margin: 0 6rem;
         &__llenar {
             width: 75%;
@@ -61,10 +58,7 @@
             width: 80%;
         }
     }
-}
-
-@media (min-width:992px) {
-    .contacto {
+    @include responsive-large {
         margin: 0 11rem;
         &__llenar {
             width: 65%;
@@ -72,5 +66,5 @@
         &__texto {
             width: 65%;
         }
-        }
+    }
 }

@@ -86,10 +86,7 @@
         display: flex;
         margin: 0 1rem;
     }
-}
-
-@media (min-width:768px) {
-    .nosotros {
+    @include responsive-medium {
         margin: 0 6rem;
         &__informacion {
             display: grid;
@@ -197,10 +194,7 @@
             margin: 0 1rem;
         }
     }
-}
-
-@media (min-width:992px) {
-    .nosotros {
+    @include responsive-large {
         margin: 0 11rem;
         &__informacion {
             display: grid;

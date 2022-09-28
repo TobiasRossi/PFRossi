@@ -3,14 +3,8 @@
 }
 
 @keyframes mover-logo {
-    0% {
-        
-    }
     50% {
         transform:rotateY(180deg);
-        
-    }
-    100% {
         
     }
 }
@@ -20,6 +14,6 @@
     height: 50px;
     &:hover {
         animation-name: mover-logo;
-        animation-duration: 2.5s;
+        animation-duration: 2s;
     }
 }

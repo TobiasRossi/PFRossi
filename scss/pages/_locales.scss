@@ -15,16 +15,10 @@
         text-align: center;
         padding: 0.7rem;
     }
-}
-
-@media (min-width:768px) {
-    .locales {
+    @include responsive-medium {
         margin: 0 6rem;
     }
-}
-
-@media (min-width:992px) {
-    .locales {
+    @include responsive-large {
         margin: 0 11rem;
         &__tarjeta {
             display: flex;

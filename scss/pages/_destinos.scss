@@ -18,6 +18,28 @@
         overflow-x: auto;
         overscroll-behavior-inline: contain;
     }
+    @include responsive-medium {
+        margin: 0 6rem;
+        &__tarjeta-text {
+            font-size: medium;
+            margin: 0.5rem;
+        }
+    }
+    @include responsive-large {
+        margin: 0 11rem;
+        &__tarjeta {
+            margin: 1.25rem;
+            text-align: center;
+            background-color: #fafafa;
+            border-radius: 40px;
+            width: 23vw;
+            box-shadow: 2px 2px 20px #363636;
+            &-text {
+                font-size: large;
+                margin: 0.5rem;
+            }
+        }
+    }
 }
 
 ::-webkit-scrollbar {
@@ -37,32 +59,4 @@
 
 ::-webkit-scrollbar-thumb:hover {
     background: #919191;
-}
-
-@media (min-width:768px) {
-    .destinos {
-        margin: 0 6rem;
-        &__tarjeta-text {
-            font-size: medium;
-            margin: 0.5rem;
-        }
-    }
-}
-
-@media (min-width:992px) {
-    .destinos{
-        margin: 0 11rem;
-        &__tarjeta {
-            margin: 1.25rem;
-            text-align: center;
-            background-color: #fafafa;
-            border-radius: 40px;
-            width: 23vw;
-            box-shadow: 2px 2px 20px #363636;
-            &-text {
-                font-size: large;
-                margin: 0.5rem;
-            }
-        }
-    }
 }

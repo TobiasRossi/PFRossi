@@ -9,16 +9,10 @@
     &__cards {
         background-color: #EAEBED;
     }
-}
-
-@media (min-width:768px) {
-    .viajes {
+    @include responsive-medium {
         margin: 0 6rem;
     }
-}
-
-@media (min-width:992px) {
-    .viajes {
+    @include responsive-large {
         margin: 0 11rem;
     }
 }
