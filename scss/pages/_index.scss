@@ -7,7 +7,7 @@
 .viajes {
     margin: 0 3rem;
     &__cards {
-        background-color: #EAEBED;
+        background-color: $color-main;
     }
     @include responsive-medium {
         margin: 0 6rem;

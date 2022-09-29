@@ -1,6 +1,6 @@
 .destinos {
     margin: 0 3rem;
-    background-color: #EAEBED;
+    background-color: $color-main;
     &__titulo {
         margin: 0;
         padding: 1rem
@@ -30,10 +30,8 @@
         &__tarjeta {
             margin: 1.25rem;
             text-align: center;
-            background-color: #fafafa;
             border-radius: 40px;
             width: 23vw;
-            box-shadow: 2px 2px 20px #363636;
             &-text {
                 font-size: large;
                 margin: 0.5rem;
