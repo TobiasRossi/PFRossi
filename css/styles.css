@@ -101,6 +101,7 @@ body {
 }
 .contacto__boton:hover {
   transform: scale(1.2);
+  background-color: #50bfc3;
 }
 
 .viajes__paises {
@@ -491,7 +492,6 @@ body {
     display: grid;
     grid-row: 7;
     margin-top: 1.5rem;
-    width: 160px;
     justify-self: center;
     align-self: center;
   }
@@ -567,7 +567,6 @@ body {
   }
   .nosotros__flecha {
     margin-top: 1.25rem;
-    width: 95px;
     grid-column: 3/4;
     grid-row: 6/7;
     justify-self: flex-start;

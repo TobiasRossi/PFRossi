@@ -12,6 +12,7 @@
         transition-timing-function: ease-out;
         &:hover {
             transform: scale(1.2);
+            background-color: #50bfc3;
         }
     }
 }
