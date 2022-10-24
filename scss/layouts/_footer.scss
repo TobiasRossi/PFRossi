@@ -4,25 +4,25 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    min-height: 90px;
+    padding-top: 1rem;
     &__h3 {
-        font-size: 130%;
+        font-size: 100%;
         color: #fafafa;
         margin: 0.5rem;
     }
     &__redes {
         margin-bottom: 1rem;
+        display: block;
         text-align: center;
-        width: 30%;
     }
     &__pagos {
+        display: block;
         text-align: center;
-        width: 30%;
     }
     &__telefono {
         margin-top: 1rem;
+        display: block;
         text-align: center;
-        width: 30%;
     }
     &__h3 {
         &-telefono {
@@ -43,7 +43,6 @@
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
-        min-height: 90px;
         &__redes {
             margin: 0;
             padding-left: 0.7rem;

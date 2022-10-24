@@ -32,26 +32,26 @@ body {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  min-height: 90px;
+  padding-top: 1rem;
 }
 .footer__h3 {
-  font-size: 130%;
+  font-size: 100%;
   color: #fafafa;
   margin: 0.5rem;
 }
 .footer__redes {
   margin-bottom: 1rem;
+  display: block;
   text-align: center;
-  width: 30%;
 }
 .footer__pagos {
+  display: block;
   text-align: center;
-  width: 30%;
 }
 .footer__telefono {
   margin-top: 1rem;
+  display: block;
   text-align: center;
-  width: 30%;
 }
 .footer__h3-telefono {
   align-self: center;
@@ -71,7 +71,6 @@ body {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    min-height: 90px;
   }
   .footer__redes {
     margin: 0;
@@ -143,6 +142,7 @@ body {
 }
 
 .nosotros__tarjeta {
+  padding: 0.25rem;
   width: auto;
   max-width: 230px;
   background: #fafafa;
@@ -305,8 +305,6 @@ body {
 }
 
 .banner {
-  display: flex;
-  justify-self: center;
   width: 100%;
 }
 
